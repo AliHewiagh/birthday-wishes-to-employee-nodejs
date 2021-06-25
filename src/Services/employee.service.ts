@@ -16,29 +16,13 @@ class EmployeeService {
         );
 
         return employees.filter((employee) =>
-            this.didNotReceivedWishToday(employee)
+            this.didReceivedWishToday(employee)
         );
     }
 
-    didNotReceivedWishToday(employee: Employee) {
-        // const cache = new NodeCache();
-        // const value = cache.get('myKey');
-        // const today = moment();
-
-        // console.log('Value cache', value);
-
-        // if (value === undefined) {
-        //     return true;
-        // } else {
-        //     if (value === today) {
-        //         return false;
-        //     }
-
-        //     cache.del(employee.id);
-        //     return true;
-        // }
-
-        return false;
+    didReceivedWishToday(employee: Employee) {
+        // To implement - remove employees who already received wishes today
+        return true;
     }
 
     /* Get IDs of those not supposed to
@@ -69,7 +53,7 @@ class EmployeeService {
     generateGreetingDateParam(greetingParameter: string): string {
         let greetingDateParam = greetingParameter;
 
-        const today = moment('2022-02-15T00:00:00');
+        const today = moment('2009-02-15T00:00:00');
         // const today = moment();
 
         let month = ('0' + (today.month() + 1)).slice(-2);
