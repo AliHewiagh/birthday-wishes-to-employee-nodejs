@@ -7,7 +7,7 @@ const startServer = () => {
     const port: number = parseInt(<string>process.env.PORT, 10) || 5000;
 
     app.listen(port, () => {
-        console.log(`server runningd on port ${port}`);
+        console.log(`server running on port ${port}`);
     });
 };
 

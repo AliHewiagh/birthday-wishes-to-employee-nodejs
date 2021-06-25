@@ -19,7 +19,7 @@ class EmailService {
             let from = `Realm Digital <${process.env.SENDER_EMAIL}>`;
             const mailOptions = {
                 from: from,
-                to: process.env.RELIEVER_EMAIL || 'alihewaigh@gmail.com',
+                to: process.env.RECEIVER_EMAIL || 'alihewaigh@gmail.com',
                 subject: greeting.emailTemplate.subject,
                 html: greeting.emailTemplate.content,
             };
@@ -32,8 +32,6 @@ class EmailService {
                 greeting.employee.name
             );
             console.log('emailSuccessResponse', emailSuccessResponse);
-
-            const today = moment();
 
             return emailSuccessResponse;
         } catch (error) {
