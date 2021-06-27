@@ -35,7 +35,7 @@ additional requirement
 2. Clone the project.
 3. Create .env file in the root directory.
 4. Set the PORT to 5000, EXTERNAL_API_BASE_URL to `"https://interview-assessment-1.realmdigital.co.za"` (external api), SENDER_EMAIL (use the gmail account to Send emails from), SENDER_PASSWORD (password of the gmail account) and RECEIVER_EMAIL (any email address to send the emails too - assuming employee email) in your .env file.
-5. Disable `Less Secure` of your gmail account. <a href="https://nodemailer.com/usage/using-gmail/" target="_blank">Documentation</a> (Easy Step).
+5. Enable `Less Secure` of your gmail account. <a href="https://nodemailer.com/usage/using-gmail/" target="_blank">Nodemailer Documentation</a> | <a href="https://www.google.com/settings/security/lesssecureapps" target="_blank">Gmail Less Secure</a> (Easy Step).
 6. Open the project diroctory in your terminal/command and run ➡️ `npm install` to get all dependencies
 7. Run ➡️ `npm run dev`
 8. Go to your faviourte browser and visit this url `localhost:5000/greeting`.
